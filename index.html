@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Empreendedorismo além do livro</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#10211c;--paper:#eef4ef;--card:#fbfffc;--line:#d3e0d6;--muted:#5b6b62;--leaf:#1f6b4a;--gold:#c98412;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.55;font-size:17px}
+a{color:var(--leaf)}
+.wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}
+header.top{position:sticky;top:0;z-index:20;background:rgba(238,244,239,.94);border-bottom:1px solid var(--line)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.brand{font-weight:700}.brand span{color:var(--leaf)}
+nav{display:flex;gap:6px;overflow-x:auto}
+nav a{text-decoration:none;color:var(--ink);font-size:.8rem;font-weight:600;white-space:nowrap;padding:8px 10px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2rem,7vw,3.8rem);line-height:1.05;margin:8px 0 14px}
+.kicker{font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf)}
+.tracks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tracks button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font:700 .85rem inherit;cursor:pointer}
+.tracks button.on{background:var(--ink);color:#fff}
+.stats{display:grid;gap:12px;margin:22px 0}
+.stat{background:var(--ink);color:#eef6f1;border-radius:var(--r);padding:20px}
+.stat b{font-family:Fraunces,serif;font-size:2.2rem;display:block;color:#e3b34a}
+section{padding:26px 0}h2{font-family:Fraunces,serif}
+.grid{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.links a{font-weight:700;margin-right:12px}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;background:#d7eadf;color:var(--leaf);padding:3px 8px;border-radius:999px;margin-bottom:8px}
+.tag.st{background:#f3e4c4;color:#7a5208}.tag.in{background:#dce4f3;color:#243a6b}
+.labs{background:var(--ink);color:#eef6f1;border-radius:22px;padding:22px}
+.task{background:#fff;color:var(--ink);border-radius:16px;padding:16px;margin-top:14px}
+.note{font-size:.86rem;color:var(--muted)}.hide{display:none!important}
+@media(min-width:760px){.stats{grid-template-columns:1fr 1fr 1fr}.grid.two{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header class="top"><div class="wrap top-inner"><div class="brand">Empreender <span>além do livro</span></div>
+<nav><a href="#trilhas">Trilhas</a><a href="#moc">MOC</a><a href="#ideias">Ideias</a><a href="#tarefa">Tarefa</a></nav></div></header>
+<main class="wrap">
+<p class="kicker">Administração · Unimontes · set. 2026</p>
+<h1>Abrir CNPJ não é validar um negócio.</h1>
+<p>O livro ensina plano e canvas. O Norte de Minas ensina outra coisa: muita gente formaliza, muita gente fecha, e o ambiente de inovação ainda está sendo escrito em lei municipal.</p>
+<p class="note">Prof. Marcelo Caetano Melo</p>
+<div class="stats">
+<article class="stat"><b>4.885</b><p>saldo em Montes Claros em 2025: 12.050 abertas e 7.165 fechadas.</p></article>
+<article class="stat"><b>96%</b><p>das aberturas em Minas são micro e pequenas — não unicórnio.</p></article>
+<article class="stat"><b>44º</b><p>Brasil no ranking GEM 2025 de condições para empreender (53 economias).</p></article>
+</div>
+<section id="trilhas"><h2>Três empreendedorismos</h2>
+<div class="tracks">
+<button type="button" data-filter="all" class="on">Os três</button>
+<button type="button" data-filter="mei">MEI e pequeno negócio</button>
+<button type="button" data-filter="st">Startup</button>
+<button type="button" data-filter="in">Dentro da empresa</button>
+</div>
+<div class="grid two">
+<article class="card" data-track="mei"><span class="tag">MEI / MPE</span><h3>O Brasil real</h3><p>Caixa, cliente da esquina, Simples. O negócio sobrevive ao 13º mês?</p>
+<p class="links"><a href="https://saladoempreendedor.montesclaros.mg.gov.br/sala-mineira-do-empreendedor" target="_blank" rel="noopener">Sala Mineira (MOC)</a></p></article>
+<article class="card" data-track="st"><span class="tag st">Startup</span><h3>Inovação no sertão</h3><p>Norte Valley, A Fábrica, Lei municipal de inovação (2025).</p>
+<p class="links"><a href="https://mg.agenciasebrae.com.br/inovacao-e-tecnologia/montes-claros-aprova-lei-de-inovacao-para-atrair-investimentos-e-apoiar-empresas-de-base-tecnologica/" target="_blank" rel="noopener">Lei de Inovação MOC</a></p></article>
+<article class="card" data-track="in"><span class="tag in">Intra</span><h3>Sem sair do emprego</h3><p>Projeto novo dentro de empresa, prefeitura, hospital, cooperativa.</p></article>
+</div></section>
+<section id="moc"><h2>O laboratório é a cidade</h2>
+<article class="card" data-track="st"><h3>Lei de Inovação em Montes Claros</h3><p>Conselho, prêmio InovaMOC, sandbox, inventor independente. Lei no papel ainda não é dealflow.</p>
+<p class="links"><a href="https://mg.agenciasebrae.com.br/inovacao-e-tecnologia/montes-claros-aprova-lei-de-inovacao-para-atrair-investimentos-e-apoiar-empresas-de-base-tecnologica/" target="_blank" rel="noopener">ASN Sebrae</a></p></article>
+<article class="card" data-track="mei"><h3>Abrir é fácil. Permanecer não</h3><p>Quase cinco mil a mais no saldo — e sete mil baixas no mesmo ano.</p>
+<p class="links"><a href="https://geraisnews.com.br/2026/01/23/montes-claros-acelera-o-empreendedorismo-e-fecha-2025-com-quase-5-mil-novas-empresas/" target="_blank" rel="noopener">Saldo 2025</a></p></article>
+<article class="card"><h3>Quem já opera aqui</h3><p>Norte Valley, A Fábrica, Norte Empreendedor (Sicoob + Sebrae), Comunidade Empreendedora.</p>
+<p class="links"><a href="https://jornalmontesclaros.com.br/2025/07/30/norte-empreendedor-fortalece-negocios-em-cinco-cidades-do-norte-de-minas-e-inicia-expansao-para-a-bahia/" target="_blank" rel="noopener">Norte Empreendedor</a>
+<a href="https://mg.agenciasebrae.com.br/inovacao-e-tecnologia/startup-day-2026-chega-a-montes-claros-com-inscricoes-gratuitas" target="_blank" rel="noopener">Startup Day MOC</a></p></article>
+</section>
+<section id="ideias"><h2>Além de “tenha uma ideia”</h2>
+<div class="grid two">
+<article class="card"><h3>Effectuation</h3><p>Começar pelo que se tem, não pelo plano de cinco anos.</p>
+<p class="links"><a href="https://effectuation.org/the-effectuation-toolkit" target="_blank" rel="noopener">Toolkit Sarasvathy</a></p></article>
+<article class="card"><h3>The Mom Test</h3><p>Não perguntem “você compraria?”. Perguntem o que a pessoa já fez com o problema.</p>
+<p class="links"><a href="http://momtestbook.com/" target="_blank" rel="noopener">momtestbook.com</a></p></article>
+<article class="card"><h3>GEM Brasil</h3><p>Necessidade × oportunidade. Tratar os dois como um só é preguiça teórica.</p>
+<p class="links"><a href="https://www.gemconsortium.org/economy-profiles/brazil-2" target="_blank" rel="noopener">Perfil Brasil</a></p></article>
+<article class="card"><h3>Textos</h3>
+<p class="links"><a href="https://www.regepe.org.br/regepe/about" target="_blank" rel="noopener">REGEPE</a>
+<a href="https://periodicos.fgv.br/rae" target="_blank" rel="noopener">RAE</a>
+<a href="https://github.com/harishkotra/freecanvas" target="_blank" rel="noopener">FreeCanvas</a>
+<a href="https://github.com/SanketSapkal/founder-skills" target="_blank" rel="noopener">founder-skills</a>
+<a href="https://sebrae.com.br/sites/PortalSebrae" target="_blank" rel="noopener">Sebrae</a></p></article>
+</div></section>
+<section id="tarefa"><div class="labs"><h2>Tarefa da semana (7 dias)</h2>
+<p>Dupla. Sem logo, sem PowerPoint.</p>
+<div class="task">
+<p><strong>1.</strong> Um problema de Montes Claros ou do Norte de Minas que vocês já viram de perto.</p>
+<p><strong>2.</strong> Cinco conversas com quem sofre o problema (Mom Test).</p>
+<p><strong>3.</strong> Lean Canvas <em>depois</em> das conversas.</p>
+<p><strong>4.</strong> Entrega: canvas + uma página dizendo o que as entrevistas mataram na ideia.</p>
+</div></div></section>
+</main>
+<footer class="wrap"><p class="note">Fontes: Sebrae Minas / Receita (2025); GEM 2025. Não substitui a bibliografia obrigatória.</p></footer>
+<script>
+const buttons=[...document.querySelectorAll(".tracks button")];
+const items=[...document.querySelectorAll("[data-track]")];
+buttons.forEach(btn=>btn.addEventListener("click",()=>{
+ buttons.forEach(b=>b.classList.toggle("on",b===btn));
+ const f=btn.dataset.filter;
+ items.forEach(el=>el.classList.toggle("hide", !(f==="all"||el.dataset.track===f)));
+}));
+</script>
+</body></html>
