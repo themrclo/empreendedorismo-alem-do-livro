@@ -3,9 +3,178 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta name="theme-color" content="#10211c"/>
 <title>Empreendedorismo além do livro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#10211c;--paper:#eef4ef;--card:#fbfffc;--line:#d3e0d6;--muted:#5b6b62;--leaf:#1f6b4a;--gold:#c98412;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;line-height:1.55;font-size:17px}
+a{color:var(--leaf)}
+.wrap{width:min(1100px,calc(100% - 32px));margin:0 auto}
+header.top{position:sticky;top:0;z-index:20;background:rgba(238,244,239,.94);border-bottom:1px solid var(--line)}
+.top-inner{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+.brand{font-weight:700}.brand span{color:var(--leaf)}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav a{text-decoration:none;color:var(--ink);font-size:.78rem;font-weight:600;white-space:nowrap;padding:8px 10px}
+h1{font-family:Fraunces,Georgia,serif;font-size:clamp(2rem,7vw,3.6rem);line-height:1.05;margin:8px 0 14px}
+.kicker{font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--leaf)}
+.tracks{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tracks button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;font:700 .85rem inherit;cursor:pointer}
+.tracks button.on{background:var(--ink);color:#fff}
+.stats{display:grid;gap:12px;margin:22px 0}
+.stat{background:var(--ink);color:#eef6f1;border-radius:var(--r);padding:20px}
+.stat b{font-family:Fraunces,serif;font-size:clamp(1.7rem,6vw,2.5rem);display:block;color:#e3b34a}
+section{padding:28px 0}h2{font-family:Fraunces,serif;margin:0 0 8px;font-size:clamp(1.4rem,3vw,2rem)}
+h3{margin:0 0 8px;font-size:1.05rem}
+.sub{color:var(--muted);margin:0 0 16px}
+.grid{display:grid;gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.card p{margin:0}
+.links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:10px}
+.links a{font-weight:700;font-size:.92rem}
+.tag{display:inline-block;font-size:.68rem;font-weight:700;text-transform:uppercase;background:#d7eadf;color:var(--leaf);padding:3px 8px;border-radius:999px;margin:0 4px 8px 0}
+.tag.st{background:#f3e4c4;color:#7a5208}
+.note{font-size:.86rem;color:var(--muted)}
+.axis{border-left:4px solid var(--gold);padding-left:14px;margin:16px 0}
+footer{padding:28px 0 48px;color:var(--muted);font-size:.9rem}
+.hide{display:none!important}
+.listy{margin:8px 0 0;padding-left:1.15em}
+@media(min-width:760px){.stats{grid-template-columns:1fr 1fr 1fr}.grid.two{grid-template-columns:1fr 1fr}}
+</style>
 </head>
 <body>
-<p>see artifacts</p>
+<header class="top"><div class="wrap top-inner">
+<div class="brand">Empreender <span>além do livro</span></div>
+<nav>
+<a href="#por-que">Por quê</a>
+<a href="#repos">Repos</a>
+<a href="#pessoas">Pessoas</a>
+<a href="#orgaos">Órgãos</a>
+<a href="#ler">Ler</a>
+<a href="#revistas">Revistas</a>
+<a href="#x">X</a>
+<a href="#eixos">Eixos</a>
+</nav>
+</div></header>
+<main>
+<section><div class="wrap">
+<p class="kicker">Administração · Unimontes · set. 2026 · v3</p>
+<h1>Abrir CNPJ não é validar um negócio.</h1>
+<p>O livro ensina plano, canvas e “espírito empreendedor”. O small business ensina outra coisa: invoice que não entra, cliente que some no WhatsApp, caixa que mente na sexta-feira. Este guia é o mapa fora do cânone — repositórios, pessoas, órgãos, artigos, revistas e o que o X está dizendo agora.</p>
+<p class="note">Prof. Marcelo Caetano Melo · material complementar. Números mudam; leiam a fonte antes de citar em prova ou TCC.</p>
+<div class="stats">
+<article class="stat"><b>4.885</b><p>saldo em Montes Claros em 2025: 12.050 abertas e 7.165 fechadas (Sebrae Minas / Receita, jan. 2026).</p></article>
+<article class="stat"><b>~42%</b><p>dos empreendedores iniciais no GEM 2025 ainda abrem por necessidade — o melhor número recente, ainda enorme.</p></article>
+<article class="stat"><b>2º sonho</b><p>“ter o próprio negócio” subiu para cerca de 40% da população. Intenção sobra. Sobrevivência é outro problema.</p></article>
+</div></div></section>
+<section id="por-que"><div class="wrap">
+<h2>Por que sair da bolha</h2>
+<p class="sub">Três deslocamentos. Se vocês levarem só isto da página, já saíram do manual.</p>
+<div class="grid two">
+<article class="card"><h3>1. O Brasil empreende muito e sobrevive mal</h3><p>O GEM 2025 (Sebrae + ANEGEPE) descreve dezenas de milhões de adultos à frente de um negócio ou com intenção de abrir. O perfil do empreendedor inicial continua, em maioria, ensino médio ou menos, renda baixa, pretos e pardos.</p>
+<div class="links"><a href="https://datasebrae.com.br/" target="_blank" rel="noopener">DataSebrae / GEM</a> <a href="https://anegepe.org.br/" target="_blank" rel="noopener">ANEGEPE</a></div></article>
+<article class="card"><h3>2. Necessidade e oportunidade na mesma sala</h3><p>Tratar MEI e scale-up com o mesmo canvas é preguiça teórica. Escolham a lógica: causation, effectuation ou bricolage.</p>
+<div class="links"><a href="https://effectuation.org/the-effectuation-toolkit" target="_blank" rel="noopener">Toolkit Effectuation</a></div></article>
+<article class="card"><h3>3. O gargalo não é “inovação”</h3><p>Fatura atrasada, fila no WhatsApp, planilha que não fecha. Sem caixa, contrato e cliente, Lean Canvas é desenho.</p></article>
+<article class="card"><h3>Filtrem a trilha</h3><p>Nem todo aluno vai abrir startup. Nem todo MEI é falta de ambição.</p>
+<div class="tracks">
+<button type="button" data-filter="all" class="on">Os três</button>
+<button type="button" data-filter="mei">MEI / small business</button>
+<button type="button" data-filter="st">Startup</button>
+<button type="button" data-filter="in">Dentro da empresa</button>
+</div></article></div></div></section>
+<section id="repos"><div class="wrap">
+<h2>Repositórios que pagam conta</h2>
+<div class="grid two">
+<article class="card" data-track="mei st"><span class="tag">CRM</span><h3>Twenty</h3><p>CRM open source. Substitui o começo do HubSpot.</p><div class="links"><a href="https://github.com/twentyhq/twenty" target="_blank" rel="noopener">github.com/twentyhq/twenty</a></div></article>
+<article class="card" data-track="mei"><span class="tag">Cobrança</span><h3>Invoice Ninja</h3><p>Proposta, recibo, atraso, portal do cliente.</p><div class="links"><a href="https://github.com/invoiceninja/invoiceninja" target="_blank" rel="noopener">github.com/invoiceninja/invoiceninja</a></div></article>
+<article class="card" data-track="mei"><span class="tag">ERP leve</span><h3>ERPNext · Dolibarr · MyCompany</h3><p>Estoque + pedido + financeiro numa base.</p><div class="links"><a href="https://github.com/frappe/erpnext" target="_blank" rel="noopener">ERPNext</a> <a href="https://github.com/Dolibarr/dolibarr" target="_blank" rel="noopener">Dolibarr</a> <a href="https://github.com/lsfusion-solutions/mycompany" target="_blank" rel="noopener">MyCompany</a></div></article>
+<article class="card" data-track="mei st"><span class="tag">Automação</span><h3>n8n</h3><p>Pedido no WhatsApp → planilha → aviso.</p><div class="links"><a href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener">github.com/n8n-io/n8n</a></div></article>
+<article class="card" data-track="mei st"><span class="tag">Atendimento</span><h3>Chatwoot</h3><p>Inbox único: WhatsApp, Instagram, e-mail.</p><div class="links"><a href="https://github.com/chatwoot/chatwoot" target="_blank" rel="noopener">github.com/chatwoot/chatwoot</a></div></article>
+<article class="card" data-track="mei"><span class="tag">Caixa</span><h3>Actual Budget</h3><p>Saber para onde foi o dinheiro da semana.</p><div class="links"><a href="https://actualbudget.org" target="_blank" rel="noopener">actualbudget.org</a></div></article>
+<article class="card" data-track="st"><span class="tag st">Canvas</span><h3>FreeCanvas + founder-skills</h3><p>Canvas depois da conversa.</p><div class="links"><a href="https://github.com/harishkotra/freecanvas" target="_blank" rel="noopener">FreeCanvas</a> <a href="https://github.com/SanketSapkal/founder-skills" target="_blank" rel="noopener">founder-skills</a></div></article>
+<article class="card" data-track="st"><span class="tag st">Stack</span><h3>Listas vivas</h3><p>Útil para quem constrói software.</p><div class="links"><a href="https://github.com/framework-zero/awesome-builder-tools" target="_blank" rel="noopener">awesome-builder-tools</a> <a href="https://github.com/supabase/supabase" target="_blank" rel="noopener">Supabase</a> <a href="https://github.com/gitroomhq/postiz-app" target="_blank" rel="noopener">Postiz</a></div></article>
+</div></div></section>
+<section id="pessoas"><div class="wrap">
+<h2>Pessoas para seguir</h2>
+<div class="grid two">
+<article class="card" data-track="mei st in"><h3>Tales Andreassi · FGV EAESP</h3><p>Educação empreendedora e GV Casos.</p><div class="links"><a href="https://periodicos.fgv.br/gvcasos" target="_blank" rel="noopener">GV Casos</a></div></article>
+<article class="card" data-track="mei"><h3>Vânia Nassif · UNINOVE / ANEGEPE</h3><p>Grupos minorizados, falha, mulheres pretas.</p><div class="links"><a href="https://anegepe.org.br/" target="_blank" rel="noopener">ANEGEPE</a></div></article>
+<article class="card" data-track="mei st"><h3>Hilka Machado · Helena Vieira</h3><p>REGEPE e Aliança Empreendedora.</p><div class="links"><a href="https://regepe.org.br/" target="_blank" rel="noopener">REGEPE</a> <a href="https://aliancaempreendedora.org.br/" target="_blank" rel="noopener">Aliança</a></div></article>
+<article class="card" data-track="st"><span class="tag st">Capital</span><h3>Cássio Spina · Anjos do Brasil</h3><p>Early-stage no Brasil: incentivo e dealflow, não falta de ideia.</p><div class="links"><a href="https://www.anjosdobrasil.net/" target="_blank" rel="noopener">anjosdobrasil.net</a></div></article>
+<article class="card" data-track="mei st in"><h3>Saras Sarasvathy</h3><p>Effectuation: começar pelos meios, não pelo TAM.</p><div class="links"><a href="https://effectuation.org/the-effectuation-toolkit" target="_blank" rel="noopener">effectuation.org</a></div></article>
+<article class="card" data-track="mei"><h3>Ted Baker & Reed Nelson</h3><p>Bricolage: fazer com o que está à mão.</p></article>
+<article class="card" data-track="st"><span class="tag st">Validação</span><h3>Rob Fitzpatrick · Ash Maurya</h3><p>Mom Test e Lean Canvas depois das conversas.</p><div class="links"><a href="https://www.momtestbook.com/" target="_blank" rel="noopener">Mom Test</a> <a href="https://leanstack.com/lean-canvas" target="_blank" rel="noopener">Lean Canvas</a></div></article>
+<article class="card" data-track="mei st"><h3>No X</h3><p>@sweatystartup e @thejustinwelsh: hábito, não teoria.</p><div class="links"><a href="https://x.com/sweatystartup" target="_blank" rel="noopener">@sweatystartup</a> <a href="https://x.com/thejustinwelsh" target="_blank" rel="noopener">@thejustinwelsh</a></div></article>
+</div></div></section>
+<section id="orgaos"><div class="wrap">
+<h2>Órgãos, empresas e a cidade</h2>
+<div class="grid two">
+<article class="card" data-track="mei"><span class="tag">Small business</span><h3>Sebrae + Sala do Empreendedor</h3><p>GEM, abertura, DAS, DASN.</p><div class="links"><a href="https://www.sebrae.com.br/" target="_blank" rel="noopener">Sebrae</a> <a href="https://datasebrae.com.br/" target="_blank" rel="noopener">DataSebrae</a></div></article>
+<article class="card" data-track="mei"><span class="tag">Norte de Minas</span><h3>Norte Empreendedor · Norte Valley</h3><p>Sicoob Credinor + Sebrae. Lei municipal de C,T&I em Montes Claros (2025).</p><div class="links"><a href="https://www.sicoobcredinor.coop.br/" target="_blank" rel="noopener">Sicoob Credinor</a></div></article>
+<article class="card" data-track="mei"><span class="tag">Estado cliente</span><h3>Contrata+Brasil</h3><p>MEI em compra pública.</p><div class="links"><a href="https://www.gov.br/compras/pt-br" target="_blank" rel="noopener">Compras gov.br</a></div></article>
+<article class="card" data-track="st"><span class="tag st">Escala</span><h3>Endeavor · Anjos · Finep</h3><p>Ler o edital antes de sonhar com equity.</p><div class="links"><a href="https://endeavor.org.br/research/" target="_blank" rel="noopener">Endeavor Research</a> <a href="https://www.anjosdobrasil.net/" target="_blank" rel="noopener">Anjos</a> <a href="https://www.finep.gov.br/" target="_blank" rel="noopener">Finep</a></div></article>
+<article class="card" data-track="mei st in"><h3>ANEGEPE + ANPAD</h3><p>EGEPE, REGEPE, EnANPAD ITE.</p><div class="links"><a href="https://anegepe.org.br/" target="_blank" rel="noopener">anegepe.org.br</a> <a href="https://anpad.org.br/" target="_blank" rel="noopener">ANPAD</a></div></article>
+<article class="card" data-track="mei"><span class="tag">Formação</span><h3>Aliança Empreendedora</h3><p>Microempreendedor e crédito produtivo.</p><div class="links"><a href="https://aliancaempreendedora.org.br/" target="_blank" rel="noopener">aliancaempreendedora.org.br</a></div></article>
+</div></div></section>
+<section id="ler"><div class="wrap">
+<h2>O que ler quando o livro acabar</h2>
+<div class="grid two">
+<article class="card"><h3>Teoria</h3><ul class="listy"><li>Sarasvathy (2001), AMR</li><li>Baker & Nelson (2005), ASQ</li><li>Shane & Venkataraman (2000), AMR</li><li>REGEPE 2025–2026</li></ul></article>
+<article class="card"><h3>Prática</h3><ul class="listy"><li>Fitzpatrick — Mom Test</li><li>Maurya — Running Lean</li><li>GEM Brasil 2025</li><li>Endeavor Outliers 2026</li></ul>
+<div class="links"><a href="https://datasebrae.com.br/" target="_blank" rel="noopener">DataSebrae</a> <a href="https://endeavor.org.br/research/" target="_blank" rel="noopener">Endeavor</a></div></article>
+</div></div></section>
+<section id="revistas"><div class="wrap">
+<h2>Revistas para TCC</h2>
+<div class="grid two">
+<article class="card"><h3>Brasil</h3><ul class="listy"><li>REGEPE</li><li>RAE e RAC</li><li>GV Casos</li><li>EGEPE e EnANPAD</li></ul>
+<div class="links"><a href="https://regepe.org.br/" target="_blank" rel="noopener">regepe.org.br</a> <a href="https://www.scielo.br/j/regepe" target="_blank" rel="noopener">SciELO REGEPE</a></div></article>
+<article class="card"><h3>Internacional</h3><ul class="listy"><li>Journal of Business Venturing</li><li>ETP</li><li>Small Business Economics</li><li>AMR</li></ul></article>
+</div></div></section>
+<section id="x"><div class="wrap">
+<h2>O que o X está dizendo agora</h2>
+<div class="grid two">
+<article class="card"><h3>Sinal útil</h3><ul class="listy"><li>Venda perdida no WhatsApp parado.</li><li>Invoice é sistema.</li><li>MEI em compra pública.</li></ul></article>
+<article class="card"><h3>Sinal inútil</h3><ul class="listy"><li>Thread de 10 hacks.</li><li>IA substitui o sócio.</li><li>Coach de mentalidade.</li></ul>
+<p class="note">Se o post não fala de cliente, caixa ou contrato, é conteúdo.</p></article>
+</div></div></section>
+<section id="eixos"><div class="wrap">
+<h2>Três eixos para estourar o livro em sala</h2>
+<div class="axis"><h3>A. Três lógicas, um negócio</h3><p>Causation, effectuation, bricolage.</p></div>
+<div class="axis"><h3>B. Small business ≠ startup ≠ intra</h3><p>Cada trilha tem uma métrica que mata a ideia.</p></div>
+<div class="axis"><h3>C. Operação antes de marca</h3><p>Conversas → caixa → cobrança → só então canvas.</p></div>
+</div></section>
+<section id="camadas"><div class="wrap">
+<h2>Camadas da bibliografia</h2>
+<ol class="listy">
+<li>Núcleo: livro da disciplina + GEM 2025 + Mom Test.</li>
+<li>Teoria alternativa: Sarasvathy + Baker & Nelson.</li>
+<li>Brasil acadêmico: REGEPE + caso GV/ANEGEPE.</li>
+<li>Operação: Invoice Ninja ou Twenty ou planilha.</li>
+<li>Território: Sala do Empreendedor + Norte Empreendedor.</li>
+<li>Fronteira: agenda legislativa ou paper de anjo/Endeavor.</li>
+</ol></div></section>
+</main>
+<footer><div class="wrap"><p>Prof. Marcelo Caetano Melo · Administração · Unimontes. Material complementar, setembro de 2026, versão 3. Não substitui a ementa.</p></div></footer>
+<script>
+(function(){
+  var buttons=document.querySelectorAll(".tracks button");
+  var cards=document.querySelectorAll("[data-track]");
+  buttons.forEach(function(btn){
+    btn.addEventListener("click",function(){
+      buttons.forEach(function(b){b.classList.remove("on")});
+      btn.classList.add("on");
+      var f=btn.getAttribute("data-filter");
+      cards.forEach(function(c){
+        if(f==="all"){c.classList.remove("hide");return;}
+        var t=c.getAttribute("data-track")||"";
+        if(t.indexOf(f)!==-1)c.classList.remove("hide"); else c.classList.add("hide");
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
